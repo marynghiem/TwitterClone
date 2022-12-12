@@ -1,4 +1,5 @@
 import "./App.css";
+import Feed from "./Feed";
 import Sidebar from "./Sidebar";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="app">
       <h1>Hello World</h1>
       <Sidebar />
+      <Feed />
     </div>
   );
 }
