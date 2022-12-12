@@ -25,7 +25,9 @@ const Sidebar = () => {
       <SidebarOption Icon={PermIdentityIcon} text="Profile" />
       <SidebarOption Icon={MoreHorizIcon} text="More" />
 
-      <Button>Tweet</Button>
+      <Button varient="outlined" className="sidebar_tweet" fullWidth>
+        Tweet
+      </Button>
     </div>
   );
 };
