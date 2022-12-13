@@ -4,7 +4,9 @@ import "./Feed.css";
 const Feed = () => {
   return (
     <div>
-      <h1></h1>
+      <div className="feed">
+        <h2>Home</h2>
+      </div>
     </div>
   );
 };
