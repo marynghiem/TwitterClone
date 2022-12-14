@@ -4,6 +4,14 @@
   min-width: fit-content;
   overflow-y: scroll;
 }
+.feed::-webkit-scrollbar {
+  display: none;
+}
+.feed {
+  -ms-text-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .feed_header {
   position: sticky;
   top: 0;
