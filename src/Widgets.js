@@ -3,8 +3,8 @@ import "./Widgets.css";
 
 const Widgets = () => {
   return (
-    <div>
-      <h1></h1>
+    <div className="widgets">
+      <h2>Widgets</h2>
     </div>
   );
 };
