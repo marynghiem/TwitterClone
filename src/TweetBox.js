@@ -11,7 +11,7 @@ const TweetBox = () => {
           <input placeholder="What's happening?" type="text" />
           <input placeholder="Enter image URL" type="text" />
         </div>
-        <Button>Tweet</Button>
+        <Button className="tweet_box_tweet_button">Tweet</Button>
       </form>
     </div>
   );
