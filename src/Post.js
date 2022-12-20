@@ -2,6 +2,10 @@ import { Avatar } from "@material-ui/core";
 import React from "react";
 import "./Post.css";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import RepeatIcon from "@mui/icons-material/Repeat";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import PublishIcon from "@mui/icons-material/Publish";
 
 const Post = ({ displayName, username, verified, timestamp, text, image, avatar }) => {
   return (
@@ -24,6 +28,12 @@ const Post = ({ displayName, username, verified, timestamp, text, image, avatar 
           </div>
         </div>
         <img src="https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif" alt="" />
+      </div>
+      <div className="post_footer">
+        <ChatBubbleOutlineIcon fontSize="small" />
+        <RepeatIcon fontSize="small" />
+        <FavoriteBorderIcon fontSize="small" />
+        <PublishIcon fontSize="small" />
       </div>
     </div>
   );
