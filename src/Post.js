@@ -28,12 +28,12 @@ const Post = ({ displayName, username, verified, timestamp, text, image, avatar 
           </div>
         </div>
         <img src="https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif" alt="" />
-      </div>
-      <div className="post_footer">
-        <ChatBubbleOutlineIcon fontSize="small" />
-        <RepeatIcon fontSize="small" />
-        <FavoriteBorderIcon fontSize="small" />
-        <PublishIcon fontSize="small" />
+        <div className="post_footer">
+          <ChatBubbleOutlineIcon fontSize="small" />
+          <RepeatIcon fontSize="small" />
+          <FavoriteBorderIcon fontSize="small" />
+          <PublishIcon fontSize="small" />
+        </div>
       </div>
     </div>
   );
