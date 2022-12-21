@@ -18,12 +18,12 @@ const Post = ({ displayName, username, verified, timestamp, text, image, avatar 
           <div className="post_header_text">
             <h3>
               Mary Nghiem{" "}
-              <span>
+              <span className="post_header_special">
                 <VerifiedUserIcon className="post_badge" />
               </span>
             </h3>
           </div>
-          <div className="post_header_descripter">
+          <div className="post_header_description">
             <p>I challenge you to build a Twitter Clone</p>
           </div>
         </div>
