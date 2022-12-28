@@ -11,23 +11,23 @@ const Post = ({ displayName, username, verified, timestamp, text, image, avatar 
   return (
     <div className="post">
       <div className="post_avatar">
-        <Avatar src="" />
+        <Avatar src={avatar} />
       </div>
       <div className="post_body">
         <div className="post_header">
           <div className="post_header_text">
             <h3>
-              Mary Nghiem{" "}
+              {displayName}{" "}
               <span className="post_header_special">
-                <VerifiedUserIcon className="post_badge" />
+                {verified && <VerifiedUserIcon className="post_badge" />}@{username}
               </span>
             </h3>
           </div>
           <div className="post_header_description">
-            <p>I challenge you to build a Twitter Clone</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img src="https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif" alt="" />
+        <img src={image} alt="" />
         <div className="post_footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
