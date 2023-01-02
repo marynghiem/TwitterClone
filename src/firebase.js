@@ -1,4 +1,5 @@
 import firebase from "firebase";
+
 const firebaseConfig = {
   apiKey: "AIzaSyAwZTOj6WukyiOa5lVRV7f-aLH0KS4l3ZU",
   authDomain: "twitter-clone-9c754.firebaseapp.com",
