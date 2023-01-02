@@ -4,6 +4,7 @@ import "./TweetBox.css";
 
 const TweetBox = () => {
   const [tweetMessage, setTweetMessage] = useState("");
+  const [tweetImage, setTweetImage] = useState("");
 
   return (
     <div className="tweet_box">
