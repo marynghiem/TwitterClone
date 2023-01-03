@@ -1,10 +1,25 @@
 import { Avatar, Button } from "@material-ui/core";
 import React, { useState } from "react";
+import db from "./firebase";
 import "./TweetBox.css";
 
 const TweetBox = () => {
   const [tweetMessage, setTweetMessage] = useState("");
   const [tweetImage, setTweetImage] = useState("");
+
+  const sendTweet = (e) => {
+    e.preventDefault();
+    db.collection("posts").add({
+      displayName: "Mary Nghiem",
+      username: "marynghiem46",
+      verified: true,
+      text: tweetMessage,
+      image: tweetImage,
+      avatar: "https://pbs.twimg.com/profile_images/1410504544023285764/YMszbSJy_400x400.jpg",
+    });
+    setTweetMessage("");
+    setTweetImage("");
+  };
 
   return (
     <div className="tweet_box">
@@ -18,8 +33,16 @@ const TweetBox = () => {
             type="text"
           />
         </div>
-        <input className="tweet_box_image_input" placeholder="Optional: Enter image URL" type="text" />
-        <Button className="tweet_box_tweet_button">Tweet</Button>
+        <input
+          value={tweetImage}
+          onChange={(e) => setTweetImage(e.target.value)}
+          className="tweet_box_image_input"
+          placeholder="Optional: Enter image URL"
+          type="text"
+        />
+        <Button onClick={sendTweet} type="submit" className="tweet_box_tweet_button">
+          Tweet
+        </Button>
       </form>
     </div>
   );
